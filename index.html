@@ -4,6 +4,16 @@
     <title>Document</title>
 
     <style>
+        @keyframes slideInFromLeft {
+            0% {
+            transform: translateX(-100%);
+            }
+            100% {
+            transform: translateX(0);
+            }
+           }
+        header {
+        }
         .parent {
             background-color: hsla(200, 100%, 20%);
             height: 400px;
@@ -13,10 +23,7 @@
             background-color: red;
             height: 50%;
             width: 50%;
-            transition: transform 1s ease-in-out 1s;
-        }
-        .parent:hover .child{
-            transform: translateX(100%);
+            animation: 1s ease-in-out 0s 1 slideInFromLeft;
         }
     </style>
 </head>
