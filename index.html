@@ -8,7 +8,8 @@
             from {background-color: hsla(125, 100%, 52%, 1);}
             to {background-color: hsla(307, 100%, 45%, 1);}
         }
-        @keyframes slideInFromLeft {
+        /*
+        @keyframes slideLeft {
             0% {
                 transform: translate(0, 0);
             }
@@ -22,7 +23,23 @@
                 transform: translate(100%, 100%);
             }
         }
-        
+        */
+        @keyframes slideLeft {
+            0% {
+                transform: translate(0, 0);
+            }                    
+            100% {                
+                transform: translate(100%, 0);
+            }
+        }
+        @keyframes slideDown {
+            0% {
+                transform: translate(100%, 0);
+            }                    
+            100% {                
+                transform: translate(100%, 100%);
+            }
+        }
         
         body {
             background-color: hsla(125, 100%, 52%, 1);
@@ -40,7 +57,7 @@
             background-color: red;
             height: 50%;
             width: 50%;
-            animation: slideInFromLeft 1.5s ease-in-out 0s 1 forwards;
+            animation: slideLeft 1.5s ease-in-out 0s 1 forwards;
         }
     </style>
 </head>
