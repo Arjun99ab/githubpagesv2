@@ -5,8 +5,12 @@
 
     <style>
         @keyframes bgTransition {
-            from {background-color: hsla(125, 100%, 52%, 1);}
-            to {background-color: hsla(307, 100%, 45%, 1);}
+            0 {background-color: red;}
+            20% {background-color: orange;}
+            40% {background-color: yellow;}   
+            60% {background-color: green;}
+            80% {background-color: blue;}
+            100% {background-color: purple;}         
         }
         /*
         @keyframes slideLeft {
@@ -49,6 +53,8 @@
             animation-name: bgTransition;
             animation-duration: 7.5s;
             animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+
         }
         .parent {
             padding: 0;
