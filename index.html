@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>animations</title>
 
     <style>
         @keyframes bgTransition {
@@ -34,7 +34,7 @@
         }
         @keyframes slideDown {
             0% {
-                transform: translate(100%, 0);
+                transform: translate(0, 0);
             }                    
             100% {                
                 transform: translate(100%, 100%);
@@ -49,15 +49,19 @@
             animation-fill-mode: forwards;
         }
         .parent {
+            padding: 0;
+            margin: 0;
             background-color: hsla(200, 100%, 20%);
             height: 400px;
             width: 400px;
         }
         .child {
+            padding: 0;
+            margin: 0;
             background-color: red;
             height: 50%;
             width: 50%;
-            animation: slideLeft 1.5s ease-in-out 0s 1 forwards, slideDown 1.5s ease 1s 1 forwards;
+            animation: slideLeft 1.5s ease-in-out 0s 1 forwards, slideDown 1.5s ease 2s 1 forwards;
         }
     </style>
 </head>
