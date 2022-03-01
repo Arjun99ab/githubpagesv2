@@ -5,8 +5,8 @@
 
     <style>
         @keyframes bgTransition {
-            from {background-color: green;}
-            to {background-color: purple;}
+            from {background-color: hsla(125, 100%, 52%, 1);}
+            to {background-color: hsla(307, 100%, 45%, 1);}
         }
         @keyframes slideInFromLeft {
             0% {
@@ -17,10 +17,10 @@
             }
            }
         body {
-            background-color: green;
-            animation-delay: 3s;
+            background-color: hsla(125, 100%, 52%, 1);
+            animation-delay: 1.5s;
             animation-name: bgTransition;
-            animation-duration: 4s;
+            animation-duration: 3s;
             animation-fill-mode: forwards;
         }
         .parent {
@@ -32,7 +32,7 @@
             background-color: red;
             height: 50%;
             width: 50%;
-            animation: 1s ease-in-out 1s 1 slideInFromLeft forwards;
+            animation: slideInFromLeft 1.5s ease-in-out 0s 1 forwards;
         }
     </style>
 </head>
