@@ -4,6 +4,10 @@
     <title>Document</title>
 
     <style>
+        @keyframes bgTransition {
+            from {background-color: red;}
+            to {background-color: yellow;}
+        }
         @keyframes slideInFromLeft {
             0% {
             transform: translateX(0);
@@ -12,7 +16,10 @@
             transform: translateX(100%);
             }
            }
-        header {
+        body {
+            background-color: red;
+            animation-name: bgTransition;
+            animation-duration: 4s;
         }
         .parent {
             background-color: hsla(200, 100%, 20%);
