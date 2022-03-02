@@ -1,0 +1,48 @@
+@keyframes bgTransition {
+  from {
+    background-color: orange;
+  }
+  to {
+    background-color: green;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(100%, 100%);
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: orange;
+  animation: bgTransition 4.5s ease-in-out 0s 1 forwards;
+}
+.parent {
+  padding: 0;
+  margin: 0;
+  background-color: hsla(200, 100%, 20%);
+  height: 400px;
+  width: 400px;
+}
+.child {
+  padding: 0;
+  margin: 0;
+  background-color: red;
+  height: 50%;
+  width: 50%;
+  animation: slideLeft 1.5s ease-in-out 0s 1 forwards,
+    slideDown 1.5s ease 1.5s 1 forwards;
+}
