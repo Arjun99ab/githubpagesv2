@@ -1,12 +1,12 @@
 @keyframes bgTransition {
   from {
-    background-color: orange;
+    background-color: hsla(200, 100%, 20%);
   }
   to {
-    background-color: green;
+    background-color: hsla(200, 100%, 20%);
   }
 }
-
+/*
 @keyframes slideLeft {
   0% {
     transform: translate(0, 0);
@@ -17,10 +17,27 @@
 }
 @keyframes slideDown {
   0% {
-    transform: translate(100%, 0);
+    transform: translate(100%, 100%);
   }
   100% {
     transform: translate(100%, 100%);
+  }
+}
+*/
+@keyframes moveText {
+  from {
+    top: -20%;
+  }
+  to {
+    top: 40%;
+  }
+}
+@keyframes moveRects {
+  from {
+    left: 20%;
+  }
+  to {
+    left: 100%;
   }
 }
 
@@ -28,8 +45,47 @@ body {
   padding: 0;
   margin: 0;
   background-color: orange;
-  animation: bgTransition 4.5s ease-in-out 0s 1 forwards;
+  animation: bgTransition 2s ease-in-out 0s 1 forwards;
+
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  color: white;
 }
+.rect1 {
+  background-color: red;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  top: 70%;
+  left: 20%;
+}
+div.textHi {
+  font-size: 30px;
+  position: fixed;
+  top: -20%;
+  right: 50%;
+  animation: moveText 1.3s ease-in-out 0.3s 1 forwards;
+}
+.animateButton {
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  background-color: orange;
+  padding: 16px 16px;
+  border-radius: 16px;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+}
+.animateButton:hover {
+  transform: scale(1.1);
+}
+.animateButton:focus + .rect1 {
+  background-color: seagreen;
+  animation: moveRects 3s ease-in-out 0s 1 forwards;
+}
+
+/*
 .parent {
   padding: 0;
   margin: 0;
@@ -46,3 +102,4 @@ body {
   animation: slideLeft 1.5s ease-in-out 0s 1 forwards,
     slideDown 1.5s ease 1.5s 1 forwards;
 }
+*/
