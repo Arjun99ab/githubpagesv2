@@ -34,14 +34,7 @@
     top: 40%;
   }
 }
-@keyframes moveRects {
-  from {
-    left: 20%;
-  }
-  to {
-    left: 100%;
-  }
-}
+
 
 body {
   padding: 0;
@@ -56,24 +49,9 @@ body {
   display: flex;
   justify-content: center;
 }
-.rect1 {
-  background-color: red;
+.youtube {
   position: fixed;
-  height: 50px;
-  width: 50px;
-  top: 70%;
-  left: 20%;
-}
-div.textHi {
-  font-size: 30px;
-  position: fixed;
-  top: -20%;
-  right: 50%;
-  animation: moveText 1.3s ease-in-out 0.3s 1 forwards;
-}
-.animateButton {
-  position: fixed;
-  top: 20%;
+  top: 40%;
   left: 10%;
   background-color: orange;
   padding: 16px 16px;
@@ -82,9 +60,36 @@ div.textHi {
   font-family: "Nunito", sans-serif;
   font-size: 30px;
 }
-.youtube {
+
+div.textHi {
+  font-size: 30px;
   position: fixed;
-  top: 40%;
+  top: -20%;
+  right: 50%;
+  animation: moveText 1.3s ease-in-out 0.3s 1 forwards;
+}
+
+
+@keyframes moveRects {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 90%;
+  }
+}
+.rect1 {
+  background-color: red;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  top: 70%;
+  left: 0%;
+}
+
+.animateButton {
+  position: fixed;
+  top: 20%;
   left: 10%;
   background-color: orange;
   padding: 16px 16px;
