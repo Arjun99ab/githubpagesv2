@@ -125,17 +125,16 @@ div.textHi {
 }
 */
 
-.typewriter h1 {
+/* .typewriter h1 {
   color: white;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  overflow: hidden; 
+  border-right: 0.15em solid white; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: 0.15em; 
   animation: typing 10s steps(29) infinite, blink-caret 0.5s step-end infinite;
 }
 
-/* The typing effect */
 @keyframes typing {
   from {
     width: 0;
@@ -162,7 +161,6 @@ div.textHi {
 
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from,
   to {
@@ -171,5 +169,5 @@ div.textHi {
   50% {
     border-color: white;
   }
-}
+} */
 
