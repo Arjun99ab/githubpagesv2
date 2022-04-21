@@ -1,5 +1,11 @@
 var api_key = "AIzaSyCGU-jCbO8UMeTQt5XZcHNObKxgG2FyIg8";
 
+document.addEventListener("keyup", function(event) {
+    if (event.code === 'Enter') {
+        getInputValue();
+    }
+});
+
 async function getInputValue(){
     // Selecting the input element and get its value 
     var inputVal = document.getElementById("myInput").value;
