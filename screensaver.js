@@ -1,6 +1,6 @@
 var canvas = document.getElementById("canvas");
 canvas.width = $(window).width();
-canvas.height = $(window).height()-6;
+canvas.height = window.innerHeight; //$(window).height()-6;
 var ctx = canvas.getContext("2d");
 
 
