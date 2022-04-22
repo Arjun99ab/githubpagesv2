@@ -15,7 +15,9 @@ async function getInputValue(){
     let data = await response.json();
     console.log(data.items[0]["id"]["videoId"]);
 
-    document.getElementById('player').src = "https://www.youtube.com/embed/" + data.items[0]["id"]["videoId"];
+    document.getElementById('player').src = "https://www.youtube.com/embed/" + data.items[1]["id"]["videoId"];
+    
+    document.getElementById('h1').innerHTML = ((data.items).length).toString();
 
 
 }
